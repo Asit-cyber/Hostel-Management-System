@@ -208,7 +208,7 @@
             $row7 = mysqli_fetch_assoc($result7);
             $student_name = $row7['Fname']." ".$row7['Lname'];
             
-      		echo "<tr><td>{$student_name}</td><td>{$row1['Student_id']}</td><td>{$hostel_name}</td><td>{$row1['Message']}</td></tr>\n";
+      		echo "<tr><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><td>{$student_name}</td><td>{$row1['Student_id']}</td><td>{$hostel_name}</td><td>{$row1['Message']}</td></tr>\n";
       	}
       }
     ?>
@@ -288,6 +288,7 @@ if(isset($_POST['submit'])){
 					</li>
 					<li>
 						<a href="allocate_room.php">Allocate</a>
+						<a href="cancle_room.php">Cancle</a>
 					</li>
 					
 					<li>
