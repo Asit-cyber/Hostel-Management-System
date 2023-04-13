@@ -160,7 +160,7 @@
             $row7 = mysqli_fetch_assoc($result7);
             $student_name = $row7['Fname']." ".$row7['Lname'];
             
-      		echo "<tr><td>{$student_name}</td><td>{$row_search['Student_id']}</td><td>{$hostel_name}</td><td>{$row_search['Message']}</td></tr>\n";
+      		echo "<tr><td> <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">{$student_name}</td><td>{$row_search['Student_id']}</td><td>{$hostel_name}</td><td>{$row_search['Message']}</td></tr>\n";
 
    	   }
    }
@@ -208,7 +208,7 @@
             $row7 = mysqli_fetch_assoc($result7);
             $student_name = $row7['Fname']." ".$row7['Lname'];
             
-      		echo "<tr><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><td>{$student_name}</td><td>{$row1['Student_id']}</td><td>{$hostel_name}</td><td>{$row1['Message']}</td></tr>\n";
+      		echo "<tr><td> <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">{$student_name}</td><td>{$row1['Student_id']}</td><td>{$hostel_name}</td><td>{$row1['Message']}</td></tr>\n";
       	}
       }
     ?>
